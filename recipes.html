@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="images/Logo4.png" type="image/png" />
+
+
+  <title>Delicious Recipes - Recipes</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar (same as index) -->
+  <nav class="navbar navbar-expand-lg navbar-light px-5 fixed-top custom-navbar">
+    <a class="navbar-brand" href="index.html">Delicious Recipes</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item active"><a class="nav-link" href="recipes.html">Recipes</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="book.html">Book Lessons</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero text-white text-center d-flex align-items-center" style="height: 70vh; background-image: url('images/Rbackground.jpeg'); background-size: cover; background-position: center; margin-top: 56px;">
+    <div class="container">
+      <h1 class="display-4">Explore Our Delicious Recipes!</h1>
+      <p class="lead">Find your next favorite dish below.</p>
+    </div>
+  </header>
+   <section id="More-Recipes" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">More Recipes</h2>
+    <div class="row justify-content-center">
+
+      <!-- Recipe Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/desert1.jpg" class="card-img-top" alt="Sweet Bowl" />
+          <div class="card-body">
+            <h5 class="card-title">Sweet Bowl</h5>
+            <div class="card-rating">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            <p class="card-text">A nutrient-packed bowl with fresh fruits and chocolate.</p>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalSweetBowl">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/Avo.jpeg" class="card-img-top" alt="Avocado & Chickpea Toast" />
+          <div class="card-body">
+            <h5 class="card-title">Avocado & Chickpea Toast</h5>
+            <div class="card-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="card-text">Whole grain toast topped with mashed chickpeas, avocado, and herbs.</p>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalAvocadoChickpeaToast">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/food9 (2).jpeg" class="card-img-top" alt="Green Smoothie" />
+          <div class="card-body">
+            <h5 class="card-title">Green Smoothie</h5>
+            <div class="card-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="card-text">A refreshing blend of spinach, kale, banana, and almond milk.</p>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalGreenSmoothie">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe Card 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/food4.jpeg" class="card-img-top" alt="Quinoa Bowl" />
+          <div class="card-body">
+            <h5 class="card-title">Quinoa Power Bowl</h5>
+            <div class="card-rating">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            <p class="card-text">A nutrient-rich bowl with Cherry, chocolate, and powdered sugar.</p>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalQuinoa">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe Card 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/food16.jpeg" class="card-img-top" alt="Cucumber Toast" />
+          <div class="card-body">
+            <h5 class="card-title">Cucumber Toast</h5>
+            <div class="card-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="card-text">Crispy toast topped with creamy cucumber   and microgreens.</p>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalCucumber">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe Card 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/smoothie1.jpg" class="card-img-top" alt="Berry Smoothie" />
+          <div class="card-body">
+            <h5 class="card-title">Berry Smoothie</h5>
+            <div class="card-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="card-text">A delicious and antioxidant-packed smoothie blend.</p>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalSmoothie">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe Card 7 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/food7 (4).jpeg" class="card-img-top" alt="Grilled Veggies" />
+          <div class="card-body">
+            <h5 class="card-title">Grilled Veggies</h5>
+            <div class="card-rating">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            <p class="card-text">A colorful medley of perfectly grilled seasonal vegetables.</p>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalVeggies">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe Card 8 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/food8 (3).jpeg" class="card-img-top" alt="Zucchini Noodles" />
+          <div class="card-body">
+            <h5 class="card-title">Zucchini Noodles</h5>
+            <div class="card-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="card-text">A low-carb, delicious alternative to pasta with pesto ad cheese.</p>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalZoodles">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe Card 9 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/food9 (3).jpeg" class="card-img-top" alt="Tofu Stir-fry" />
+          <div class="card-body">
+            <h5 class="card-title">Tofu Stir-fry</h5>
+            <div class="card-rating">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            <p class="card-text">Stir-fried tofu and veggies in a savory sauce.</p>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalTofu">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe Card 10 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/food4.jpeg" class="card-img-top" alt="Greek Yogurt Parfait" />
+          <div class="card-body">
+            <h5 class="card-title">Yogurt Parfait</h5>
+            <div class="card-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="card-text">Creamy yogurt layered with berries.</p>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalParfait">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe Card 11 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/food11 (2).jpeg" class="card-img-top" alt="Stuffed Peppers" />
+          <div class="card-body">
+            <h5 class="card-title">Stuffed Peppers</h5>
+            <div class="card-rating">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            <p class="card-text">Bell peppers filled with rice, beans, and veggies.</p>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalPeppers">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe Card 12 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/food15.jpeg" class="card-img-top" alt="Chia Pudding" />
+          <div class="card-body">
+            <h5 class="card-title">Chia Pudding</h5>
+            <div class="card-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="card-text">Creamy chia pudding with coconut milk and fruit.</p>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalChia">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Modals -->
+
+<!-- Modal for Recipe: Sweet Bowl -->
+<div class="modal fade" id="modalSweetBowl" tabindex="-1" aria-labelledby="modalSweetBowlLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalSweetBowlLabel">Sweet Bowl Recipe</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>1 cup White Greek yogurt</li>
+          <li>1/2 cup chopped Passion Fruit</li>
+          <li>1/2 cup cherries</li>
+          <li>1/4 cup Blueberries</li>
+          <li>5 chunks of chocolate</li>
+          <li>4 Blackberries</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Whisk the white Greek yogurt until fluffy.</li>
+          <li>Chop the passion fruit into blocks.</li>
+          <li>Dish the yogurt in the middle of your bowl.</li>
+          <li>Add the berries and passion fruit around it.</li>
+          <li>Place the chocolate chunks around the edges.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Recipe 2: Avocado & Chickpea Toast -->
+<div class="modal fade" id="modalAvocadoChickpeaToast" tabindex="-1" aria-labelledby="modalAvocadoChickpeaToastLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalAvocadoChickpeaToastLabel">Avocado & Chickpea Toast Recipe</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>2 slices whole grain bread</li>
+          <li>1/2 cup canned chickpeas, mashed</li>
+          <li>1 ripe avocado, mashed</li>
+          <li>1 tbsp lemon juice</li>
+          <li>Salt and pepper to taste</li>
+          <li>Chopped fresh herbs (cilantro or parsley)</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Toast the bread slices until crispy.</li>
+          <li>In a bowl, mix mashed chickpeas, mashed avocado, lemon juice, salt, and pepper.</li>
+          <li>Spread the mixture evenly over the toasted bread.</li>
+          <li>Sprinkle fresh herbs on top and serve immediately.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Recipe 3: Green Smoothie -->
+<div class="modal fade" id="modalGreenSmoothie" tabindex="-1" aria-labelledby="modalGreenSmoothieLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalGreenSmoothieLabel">Green Smoothie Recipe</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>1 cup spinach</li>
+          <li>1/2 cup kale</li>
+          <li>1 banana</li>
+          <li>1 cup almond milk</li>
+          <li>1 tbsp chia seeds (optional)</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Combine all ingredients in a blender.</li>
+          <li>Blend until smooth and creamy.</li>
+          <li>Pour into a glass and enjoy immediately.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Recipe 4: Quinoa Power Bowl -->
+<div class="modal fade" id="modalQuinoa" tabindex="-1" aria-labelledby="modalQuinoaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalQuinoaLabel">Quinoa Power Bowl Recipe</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>1 cup heated white chocolate</li>
+          <li>1/2 cup youghut</li>
+          <li>1 cup mixed fruits of choice</li>
+          <li>5g chocolate</li>
+          <li>2 tbsp powdered sugar</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Mix the white chocolate and youghut .</li>
+          <li>Add mixed fruits.</li>
+          <li>Add chocolate and springle powdered sugar.</li>
+          <li>surve after 5 minutes of chilling.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Recipe 5: Cucumber Toast -->
+<div class="modal fade" id="modalCucumber" tabindex="-1" aria-labelledby="modalCucumberLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCucumberLabel">Cucumber Toast Recipe</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>2 slices whole grain bread</li>
+          <li>1 ripe Cucumber</li>
+          <li>Salt and pepper to taste</li>
+          <li>Microgreens for garnish</li>
+          <li>1 tsp olive oil (optional)</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Toast the bread until golden.</li>
+          <li>Mash the avocado with salt and pepper.</li>
+          <li>Spread the Cucumber splices on toast.</li>
+          <li>Drizzle olive oil and top with microgreens.</li>
+          <li>Serve immediately.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Recipe 6: Berry Smoothie -->
+<div class="modal fade" id="modalSmoothie" tabindex="-1" aria-labelledby="modalSmoothieLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalSmoothieLabel">Berry Smoothie Recipe</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>1 cup mixed berries (fresh or frozen)</li>
+          <li>1 banana</li>
+          <li>1 cup Greek yogurt</li>
+          <li>1/2 cup almond milk</li>
+          <li>1 tbsp honey (optional)</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Combine all ingredients in a blender.</li>
+          <li>Blend until smooth.</li>
+          <li>Pour into glass and serve chilled.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Recipe 7: Grilled Veggies -->
+<div class="modal fade" id="modalVeggies" tabindex="-1" aria-labelledby="modalVeggiesLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalVeggiesLabel">Grilled Veggies Recipe</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>1 zucchini, sliced</li>
+          <li>1 bell pepper, sliced</li>
+          <li>1 red onion, sliced</li>
+          <li>2 tbsp olive oil</li>
+          <li>Salt, pepper, and herbs to taste</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Preheat grill to medium heat.</li>
+          <li>Toss veggies in olive oil, salt, pepper, and herbs.</li>
+          <li>Grill veggies for 5-7 minutes each side until tender.</li>
+          <li>Serve warm.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Recipe 8: Zucchini Noodles -->
+<div class="modal fade" id="modalZoodles" tabindex="-1" aria-labelledby="modalZoodlesLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalZoodlesLabel">Zucchini Noodles Recipe</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>2 medium zucchinis, spiralized</li>
+          <li>1/2 cup pesto sauce</li>
+          <li>1 tbsp olive oil</li>
+          <li>Salt and pepper to taste</li>
+          <li>Parmesan cheese (optional)</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Heat olive oil in a pan over medium heat.</li>
+          <li>Add zucchini noodles and sauté for 2-3 minutes.</li>
+          <li>Toss with pesto sauce, salt, and pepper.</li>
+          <li>Serve topped with Parmesan if desired.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Recipe 9: Tofu Stir-fry -->
+<div class="modal fade" id="modalTofu" tabindex="-1" aria-labelledby="modalTofuLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTofuLabel">Tofu Stir-fry Recipe</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>200g firm tofu, cubed</li>
+          <li>1 cup mixed vegetables (bell peppers, broccoli, carrots)</li>
+          <li>2 tbsp soy sauce</li>
+          <li>1 tbsp sesame oil</li>
+          <li>2 cloves garlic, minced</li>
+          <li>1 tsp grated ginger</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Heat sesame oil in a pan over medium heat.</li>
+          <li>Add garlic and ginger, sauté for 1 minute.</li>
+          <li>Add tofu and vegetables, stir-fry for 5-7 minutes.</li>
+          <li>Add soy sauce, toss well, and cook another 2 minutes.</li>
+          <li>Serve hot with rice or noodles.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Recipe 10: Yogurt Parfait -->
+<div class="modal fade" id="modalParfait" tabindex="-1" aria-labelledby="modalParfaitLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalParfaitLabel">Greek Yogurt Parfait Recipe</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>1 cup Greek yogurt</li>
+          <li>1/2 cup mixed berries</li>
+          <li>1/4 cup granola</li>
+          <li>1 tbsp honey (optional)</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Layer yogurt, berries, and granola in a glass.</li>
+          <li>Drizzle honey on top if desired.</li>
+          <li>Serve immediately or chill before serving.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Recipe 11: Stuffed Peppers -->
+<div class="modal fade" id="modalPeppers" tabindex="-1" aria-labelledby="modalPeppersLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPeppersLabel">Stuffed Peppers Recipe</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>4 bell peppers, tops cut off and seeds removed</li>
+          <li>1 cup cooked rice</li>
+          <li>1/2 cup black beans</li>
+          <li>1/2 cup corn kernels</li>
+          <li>1/2 cup diced tomatoes</li>
+          <li>1 tsp cumin</li>
+          <li>Salt and pepper to taste</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Preheat oven to 375°F (190°C).</li>
+          <li>Mix rice, beans, corn, tomatoes, cumin, salt, and pepper.</li>
+          <li>Stuff mixture into bell peppers.</li>
+          <li>Place peppers in a baking dish and bake for 30-35 minutes.</li>
+          <li>Serve warm.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal for Recipe 12: Chia Pudding -->
+<div class="modal fade" id="modalChia" tabindex="-1" aria-labelledby="modalChiaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalChiaLabel">Chia Pudding Recipe</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>3 tbsp chia seeds</li>
+          <li>1 cup coconut milk</li>
+          <li>1 tbsp maple syrup or honey</li>
+          <li>Fresh fruit for topping</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Mix chia seeds, coconut milk, and sweetener in a bowl.</li>
+          <li>Stir well and let sit for 5 minutes.</li>
+          <li>Stir again to break up any clumps.</li>
+          <li>Cover and refrigerate for at least 2 hours or overnight.</li>
+          <li>Top with fresh fruit before serving.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Footer (same as index) -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Delicious Recipes. All Rights Reserved.</p>
+    <small>Made with  🍽️ for food lovers everywhere.</small>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
